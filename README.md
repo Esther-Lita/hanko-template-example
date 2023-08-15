@@ -30,6 +30,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 To learn more about Hanko.io, take a look at the following resources:
 
-- [Hanko.io Documentation](https://docs.hanko.io/guides/next) - learn about Next.js features and API.
+- [Hanko.io Documentation](https://docs.hanko.io/guides/next) - learn about Hanko.io features and API.
 
 You can check out [the Hanko.io GitHub repository](https://github.com/teamhanko/hanko) - your feedback and contributions are welcome!
