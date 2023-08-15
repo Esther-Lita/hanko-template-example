@@ -5,7 +5,7 @@
   --background-color: #ffffff;
   --base-color: #343a40;
   --color-shade-1: #b1a7a6;
-  --color-shade-2: #d3d3d3;
+  --color-shade-2: #e1e5f2;
   --brand-color: #ff2e4c;
   --brand-color-shade-1: #d52845;
   --brand-color-shade-1: #d62a4c;
@@ -117,8 +117,8 @@ body {
 
 .hanko_button.hanko_primary:hover {
   color: var(--background-color);
-  background: var(--brand-color-shade-1);
   border-color: var(--brand-color-shade-1);
+  box-shadow: 0 0 0 3px rgba(255, 46, 76, 0.5);
 }
 
 .hanko_button.hanko_primary:focus {
@@ -136,19 +136,20 @@ body {
 .hanko_button.hanko_secondary {
   color: var(--base-color);
   background: var(--brand-contrast-color);
-  border-color: var(--base-color);
+  border-color: var(--color-shade-1);
 }
 
 .hanko_button.hanko_secondary:hover {
   color: var(--base-color);
-  background: var(--color-shade-2, #e5e6ef);
-  border-color: var(--base-color);
+  background: var(--color-shade-2);
+  border-color: var(--color-shade-1);
+  box-shadow: 0 0 0 3px var(--color-shade-2);
 }
 
 .hanko_button.hanko_secondary:focus {
   color: var(--base-color);
   background: var(--brand-contrast-color);
-  border-color: var(--brand-color);
+  border-color: var(--color-shade-1);
 }
 
 .hanko_button.hanko_secondary:disabled {
@@ -605,56 +606,6 @@ body {
   line-height: 0.1em;
 }
 
-.hamburguer {
-  cursor: pointer;
-  width: 24px;
-  height: 23px;
-  transition: all 0.25s;
-  position: relative;
-}
-
-.hamburguer-top,
-.hamburguer-middle,
-.hamburguer-bottom {
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  top: 15px;
-  left: 13px;
-  background: var(--base-color);
-  transform: rotate(0);
-  transition: all 0.5s;
-}
-
-.hamburguer-middle {
-  transform: translateY(7px);
-}
-
-.hamburguer-bottom {
-  transform: translateY(14px);
-}
-
-.open {
-  transform: rotate(90ged);
-}
-
-.open .hamburguer-top {
-  transform: rotate(45deg) translateY(6px) translateX(6px);
-}
-
-.open .hamburguer-middle {
-  display: none;
-}
-
-.open .hamburguer-bottom {
-  transform: rotate(-45deg) translateY(6px) translateX(-6px);
-}
-
-.open .hamburguer-top,
-.open .hamburguer-bottom {
-  height: 1px;
-}
-
 hanko-profile
   .hanko_accordionContent.hanko_dropdownContent
   .hanko_form
@@ -689,13 +640,14 @@ hanko-profile .hanko_button.hanko_dangerous {
 hanko-profile .hanko_button.hanko_dangerous:hover {
   color: var(--base-color);
   background: var(--color-shade-2, #e5e6ef);
-  border-color: var(--base-color);
+  border-color: var(--color-shade-1);
+  box-shadow: 0 0 0 3px var(--color-shade-2);
 }
 
 hanko-profile .hanko_button.hanko_dangerous:focus {
   color: var(--base-color);
   background: var(--brand-contrast-color);
-  border-color: var(--brand-color);
+  border-color: var(--color-shade-1);
 }
 
 hanko-profile .hanko_button.hanko_dangerous:disabled {

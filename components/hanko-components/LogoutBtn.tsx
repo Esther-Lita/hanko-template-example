@@ -44,7 +44,7 @@ export function LogoutBtn() {
   return (
     <button
       type="button"
-      className="rounded-full bg-[#ff2e4c] px-8 py-2 text-xl  text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:focus-visible:outline-[#ff2e4c]  hover:ring ring-[#ff2e4c]/50 ring-offset-0 leading-7"
+      className="rounded-full bg-[#ff2e4c] px-10 py-1 text-xl  text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:focus-visible:outline-[#ff2e4c]  hover:ring ring-[#ff2e4c]/50 ring-offset-0 leading-7"
       onClick={logout}
     >
       Logout
